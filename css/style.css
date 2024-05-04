@@ -1,0 +1,485 @@
+/* define colours*/
+:root {
+  --lightBlue: #50B2C0;
+  --offWhite: #F2F2F2;
+  --darkBlue: #006E90;
+  --orange: #F18F01;
+  --pink: #d63cbc;
+}
+
+body {
+  background-image: linear-gradient(pink, rgb(231, 160, 28));
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.home {
+  animation-name: fillAnimation;
+  animation-duration: 0.6s;
+}
+
+/* sliding page downwards - used on homepage */
+@keyframes fillAnimation {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding: 0px;
+  background-color: var(--offWhite);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#profile {
+  position: absolute;
+  right: 0;
+}
+
+#banner {
+  height: 22%;
+  width: 80%;
+  padding: 1%;
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+.small {
+  width: 52%;
+}
+
+li a:hover {
+  background-color: var(--orange);
+}
+
+li:focus {
+  background-color: var(--lightBlue);
+}
+
+.split {
+  border-style: none;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+}
+
+.preview {
+  width: 150px;
+  height: 160px;
+  position: relative;
+  left: 50px;
+}
+
+.top {
+  height: 20%;
+  width: 100%;
+}
+
+.titleHead {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: var(--offWhite);
+}
+
+.left {
+  left: 0;
+  background-color: var(--darkBlue);
+}
+
+.right {
+  right: 0;
+  background-color: var(--lightBlue);
+}
+
+.navIcon {
+  width: 1em;
+  height: 1em;
+}
+
+div {
+  overflow: hidden;
+}
+
+.padded {
+  padding: 10px;
+}
+
+.foreground {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 5%;
+  background-color: var(--offWhite);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.above {
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 5%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.centerPane {
+  padding: 5%;
+  width: 50%;
+  background-color: var(--offWhite);
+  position: relative;
+  left: 25%;
+  top: 30;
+}
+
+.gallery {
+  width: 12%;
+  margin: 8px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.thumbnail {
+  float: left;
+  height: 150px;
+  width: 150px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.profileIcon {
+  float: right;
+  height: 80px;
+  width: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.Bsplit {
+  background-color: gray;
+  width: 49%;
+  display:inline-block;
+}
+
+.Bsplit:hover {
+  background-color: orange;
+}
+
+.Bsplit:focus {
+  background-color: var(--lightBlue);
+}
+
+#center {
+  text-align: center;
+}
+
+/* section that is initally hidden */
+section .blogFold{
+  height: 0;
+}
+
+/* section that is initally hidden */
+section .galleryFold{
+  height: 0;
+}
+	
+/* section that is initally hidden */
+body.js .blogFold {
+	height: 0;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+
+/* unhide section */
+body.js .expandedBlog .blogFold {
+	height: 100%;
+}
+
+/* section that is initally hidden */
+body.js .galleryFold {
+	height: 0;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+
+/* unhide section */
+body.js .expandedGallery .galleryFold {
+	height: 100%;
+}
+
+.profileImage {
+  float: left;
+  height: 120px;
+  width: 120px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+h6 {
+  background: lightgray;
+  margin: 0px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+h6:nth-child(even) {
+  background-color: var(--offWhite);
+}
+
+.rightText {
+  text-align: right;
+  line-height: 10px;
+}
+
+.floatRight {
+  line-height: 10px;
+}
+
+.blogImage {
+  height: 230;
+  width: 60%;
+}
+
+.galleriesImage {
+  height: 140px;
+  width: auto;
+  margin: 5px;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+div .galleryItem {
+  float: left;
+  vertical-align: top;
+  text-align: center;
+}
+
+.caption {
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
+}
+
+.mainPanel {
+  float: left;
+  background-color: var(--offWhite);
+  width: 52%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+aside {
+  float: right;
+  background-color: var(--offWhite);
+  width: 22%;
+  margin-right: 10%;
+}
+
+.bar {
+  margin-left: 10%;
+  width: 52%;
+  background-color: var(--offWhite);
+}
+
+.galleryImage {
+  float: left;
+  height: 110px;
+  width: 110px;
+}
+
+.infoBox {
+  float: right;
+  width: 30%;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  border: none;
+  background-color: var(--darkBlue);
+  text-align: center;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: var(--darkBlue);
+  padding: 16px 32px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--orange);
+}
+
+.icon {
+  float: right;
+  width: 45px;
+  height: 45px;
+  border-radius: 25%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.favourite {
+  width: 30px;
+  height: 30px;
+  clear: right;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.centerPane.example {
+  height: 300px;
+}
+
+#searchBar {
+  float: left;
+  background-color: var(--offWhite);
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+input[type=text]:hover {
+  border-color: var(--orange);
+}
+
+div[contenteditable] {
+  overflow: hidden;
+  background-color: var(--offWhite);
+  width: 100%;
+  padding: 5px 30px;
+  padding-right: 30px;
+  border: 0px solid black;
+  resize: none;
+  overflow-y: none;
+  overflow-x: none;
+  outline: 0;
+}
+
+input[type=text]:focus {
+  outline: 0;
+  border-color: var(--lightBlue);
+}
+
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  /* hiding searchbar on mobile */
+  #searchBar {
+    display: none;
+    position: absolute;
+    left: 25%;
+    margin-top: 50px;
+  } 
+
+  .galleriesImage {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .preview {
+    display: none;
+  }
+
+    /* resizing header */
+  ul {
+    height: 50px;
+  }
+
+  .floatright {
+    display: none;
+  }
+
+      /* evenly spaces head elements */
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  a {
+    font-size: 3vw;
+  }
+
+  h6 {
+    font-size: 3vw;
+  }
+
+
+  /* Resizing text in relation to the viewport*/
+  p {
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+}

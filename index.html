@@ -1,0 +1,52 @@
+<!DOCTYPE = html>
+<html>
+	<head>
+		<lang="en">
+		<title>Pop</title>
+		<link rel="styleSheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="Author" content="Alistair Place">
+		<meta name="Description" content="A pop culture website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<!-- handles key events -->
+	<body class="home" onkeydown="openSearch(event)">
+		<header>
+			<!-- navigation bar-->
+			<ul>	
+				<li><a href="Index.html"><div class="navIcon"><img class="navIcon" src="images/megaphone.png" alt="HOME"></div></a></li>
+				<li><a href="Blogs.html">BLOG</a></li>
+				<li><a href="Galleries.html">GALLERY</a></li>
+				<li><a id="profile" href="Profile.html"><div class="navIcon"><img class="navIcon" src="images/profile.png" alt="PROFILE"></div></a></li>
+				<li><form><input type="text" id="searchBar"></form></li>
+			</ul>
+		</header>
+		<div class="top">
+			<div class="titleHead">
+				<h2>POP</h2>
+				<p style="text-align: center;">A new website to find and share your creations</p>
+			</div>
+		</div>
+		<section class="split left">
+			<div class="center">
+				<div class = "centerPane example">
+					<h2>Create Blog</h2>
+					<p>Start a new idea and share it</p>
+					<a href="CreateBlog.html"><button>Start New Blog</button></a>
+					<img class="preview" src="images/websiteBanner.jpg" alt="blogPreview">
+				</div>
+			</div>
+		</section>
+		<section class="split right">
+			<div class="center">
+				<div class = "centerPane example">
+					<h2>Create gallery</h2>
+					<p>Capture a piece of the world</p>
+					<a href="CreateGallery.html"><button>Start Gallery</button></a>
+					<img class="preview" src="images/websiteBanner.jpg" alt="blogPreview">
+				</div>
+			</div>
+		</section>
+		<script src="js/script.js"></script>
+	</body>
+</html>
