@@ -1,0 +1,48 @@
+<!DOCTYPE = html>
+<html>
+	<head>
+		<lang="en">
+		<title>Pop</title>
+		<link rel="styleSheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="Author" content="Alistair Place">
+		<meta name="Description" content="A pop culture website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<!-- handles key events -->
+	<body onkeydown="openSearch(event)">
+		<header>
+			<!-- navigation bar-->
+			<ul>	
+				<li><a href="Index.html"><div class="navIcon"><img class="navIcon" src="images/megaphone.png" alt="HOME"></div></a></li>
+				<li><a href="Blogs.html">BLOG</a></li>
+				<li><a href="Galleries.html">GALLERY</a></li>
+				<li><a id="profile" href="Profile.html"><div class="navIcon"><img class="navIcon" src="images/profile.png" alt="PROFILE"></div></a></li>
+				<li><form><input type="text" id="searchBar"></form></li>
+			</ul>
+		</header>
+		<article class="foreground">
+			<div class="above">
+				<h1>Blog about friendship</h1>
+				<div class="infoBox">
+					<img class="profileIcon" src="images/placeholder.png" alt="profile image">
+					<img class="icon favourite" src="images/favourite.png" alt="favouite">
+					<h3 class="floatright">John Smith</h3>
+					<p class="floatright">Views: 100</p>
+					<p class="floatright">Favs: 10</p>
+					<p class="floatright">Followers: 10</p>
+					<p class="floatright">Date: 1999</p>
+					<hr>
+					<p>Hi, it'my blog.</p>	
+				</div>
+				<img class="blogImage" src="images/websiteBanner.jpg" alt="blog image">
+			</div>
+			<hr>
+			<p> Friendship is a beautiful thing. Friends laugh, cry, fight.
+				 They share the best of times and the worst of times.
+				  We can't all be friends though.
+
+		</article>
+		<script src="js/script.js"></script>
+	</body>
+</html>
